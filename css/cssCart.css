@@ -40,16 +40,17 @@ header h1 {
 }
 
 .cart-item button {
-    background-color: #e74c3c;
+    background-color: #3498db;
     color: #fff;
     border: none;
-    padding: 5px 10px;
-    border-radius: 3px;
+    padding: 8px 15px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .cart-item button:hover {
-    background-color: #c0392b;
+    background-color: #2980b9;
 }
 
 #total {
@@ -67,15 +68,16 @@ header h1 {
 }
 
 #checkout-button {
-    background-color: #2ecc71;
+    background-color: #27ae60;
     color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
+    transition: background-color 0.3s ease;
 }
 
 #checkout-button:hover {
-    background-color: #27ae60;
+    background-color: #219e54;
 }

@@ -28,7 +28,8 @@ document.onreadystatechange = function () {
                     itemPrice.textContent = item.price;
 
                     var deleteButton = document.createElement('button');
-                    deleteButton.textContent = 'Supprimer';
+                    deleteButton.textContent = 'Remove';
+                    deleteButton.classList.add('remove-button');
                     deleteButton.addEventListener('click', function () {
                         cartItems.splice(index, 1);
                         sessionStorage.setItem('cartItems', JSON.stringify(cartItems));
@@ -37,6 +38,7 @@ document.onreadystatechange = function () {
 
                     var decreaseButton = document.createElement('button');
                     decreaseButton.textContent = '-';
+                    decreaseButton.classList.add('quantity-button');
                     decreaseButton.addEventListener('click', function () {
                         if (cartItems[index].quantity > 1) {
                             cartItems[index].quantity--;
@@ -49,6 +51,7 @@ document.onreadystatechange = function () {
 
                     var increaseButton = document.createElement('button');
                     increaseButton.textContent = '+';
+                    increaseButton.classList.add('quantity-button');
                     increaseButton.addEventListener('click', function () {
                         cartItems[index].quantity++;
                         renderCart();
