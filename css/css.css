@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4b611b; /* Ajout de la couleur de fond pour le corps */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow-x: auto; /* Ajout de la gestion du défilement horizontal */
+    white-space: nowrap; /* Empêche le retour à la ligne des éléments enfants */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.cart-icon {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.cart-icon img {
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.cart-counter {
+    background-color: #ff6600;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+.product {
+    display: inline-block;
+}
+
+button {
+    background-color: #56701d;
+    color: white;
+    border: none; /* Ajout de suppression de bordure pour les boutons */
+    padding: 10px 20px; /* Ajout de remplissage pour les boutons */
+    cursor: pointer;
+}
+
+.btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #555;
+}

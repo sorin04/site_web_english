@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Military Clothing</title>
+    <link rel="stylesheet" href="/css/css.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Military Clothing</h1>
+        <p class="site-description">Your destination for quality military clothing</p>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="suites.html">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <img src="../images/panier.jpg" alt="Cart">
+            <span class="cart-counter">0</span>
+        </div>
+    </div>
+</header>
+
+<section id="hero">
+    <div class="container">
+        <h2>Discover our collection of military clothing</h2>
+        <p>Explore a wide selection of quality clothing for enthusiasts of the military universe.</p>
+        <a href="suites.html" class="btn">View Products</a>
+    </div>
+</section>
+
+<section id="featured-products">
+    <div class="container">
+        <h2>Featured Products</h2>
+        <div class="product">
+            <img src="../images/OIP.jpg" alt="Camouflage combat shirt" height="250" width="250" onclick="showInfo(this)">
+            <h5>Camouflage Combat Shirt</h5>
+            <p class="price">$20</p>
+            <button class="btn" onclick="addToCart()">Add to Cart</button>
+        </div>
+        <!-- Add more products here -->
+    </div>
+</section>
+
+<div id="info-container" style="display: none;">
+    <img id="enlarged-image" src="" alt="">
+    <h5 id="product-title"></h5>
+    <p id="product-price"></p>
+</div>
+
+<footer id="about">
+    <div class="container">
+        <h4>About Us</h4>
+        <div class="about-section">
+            <div class="about-image">
+                <img src="../images/team.jpg" alt="Our Team">
+            </div>
+            <div class="about-content">
+                <h5>Contact Us</h5>
+                <p>For any questions or inquiries, feel free to contact us via email or phone.\n
+                    We are here to assist you!</p>
+                <h5>Our Experience</h5>
+                <p>We have over 10 years of experience in providing quality military clothing.</p><p> Our passionate team is dedicated to offering the best products and services to our customers.</p>
+                <h5>Our Values</h5>
+                <p>We believe in honor, integrity, and dedication. Our motivation comes from our respect </p><p>for those who serve and protect our countries. Our uniqueness lies in our commitment </p><p>to quality and authenticity.</p>
+                <h5>Our Brand</h5>
+                <p>Our brand stands for excellence and reliability. We are committed to providing </p><p>high-quality products that meet the strictest standards. We take pride in serving those</p><p> who serve.</p>
+            </div>
+        </div>
+        <p>&copy; 2024 Military Clothing</p>
+    </div>
+</footer>
+
+<footer>
+    <div class="container">
+        <h4>Contact</h4>
+        <p>For any questions or inquiries, feel free to contact us:</p>
+        <ul>
+            <li>Email: contact@militaryclothing.com</li>
+            <li>Phone: +1234567890</li>
+            <li>Address: 123, Military Clothing Street, 75000 Paris, France</li>
+        </ul>
+        <p>&copy; 2024 Military Clothing</p>
+    </div>
+</footer>
+
+<script src="java_script/index.js"></script>
+</body>
+</html>
